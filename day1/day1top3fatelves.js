@@ -1,6 +1,6 @@
 const fs = require("fs");
 function findFatElf (elvesDataFile) {
- const elvesReadData = fs.readFile(elvesDataFile, (err, data) => {
+ fs.readFile(elvesDataFile, (err, data) => {
         let elvesData = data.toString().split("\n\n");
         const elvesDataNewArray = [];
       for (let i=0; i< elvesData.length; i++){
